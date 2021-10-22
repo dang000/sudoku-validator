@@ -1,4 +1,5 @@
 // Input board is a 2D matrix of size 9x9
+// Assume board[row][col] can only be 1-9 and ""
 
 function validateBoard(board) {
     return checkRow(board) && checkColumn(board) && checkSubRegion(board, 0, 0);
