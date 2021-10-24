@@ -9,7 +9,7 @@ function validateBoard(board) {
 function checkRow(board) {
     for (let row = 0; row < board.length; row++) {
         let rowMap = {};
-        for (let col = 0; col < board.length; col++) {
+        for (let col = 0; col < board[0].length; col++) {
             let currValue = board[row][col];
             if (currValue === "") continue;
             if (rowMap[currValue]) {
